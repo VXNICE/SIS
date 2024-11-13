@@ -1,0 +1,88 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+/* Form Container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Input Fields */
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+/* Input Focus Effect */
+form input[type="text"]:focus,
+form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Update Button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    form label,
+    form input[type="submit"],
+    form input[type="text"],
+    form select {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,125 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Welcome Message Styling */
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Main Container for Student Information */
+.container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* Back Link Styling */
+.container a.back-link {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.1em;
+}
+
+.container a.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Student Name Heading */
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Gender Info */
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.button-container a,
+.button-container button {
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button Hover Effects */
+.button-container a:hover,
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete Button Special Styling */
+.button-container button.delete {
+    background-color: #dc3545;
+}
+
+.button-container button.delete:hover {
+    background-color: #b02a37;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .button-container a,
+    .button-container button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
